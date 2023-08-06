@@ -1,21 +1,58 @@
 <DOCTYPE! html>
-	<html>
-
-<html>
+	<html lang = "en">
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>YouWatch - Broadcast You.</title>
-<img src = "YouWatch.png" width = "300" height = "120"> 
 </head>
 <head>
+	<meta charset="utf-8">
 	<body>
-		 <div style = "position:fixed; left:400px; top:400px; background-color:white;">
-		 	<img src = "howtogotosettings.png" width = "222" height = "134">
-		 </div>
-		 	<div style = "position:fixed; left:650px; top:400px; background-color:white;">
-<font face = "Verdana" size = "7">This is a test.</font>        
+	<style> 
+	.youwatch-logo-img {
+		width: 100px;
+		border-radius: 10px;
+	}
+	.notice-text {
+		color: rgb(189, 189, 189);
+	}
+	.thumbnail-1-bottom-text-1 {
+		color: grey;
+	}
+	.thumbnail-1-bottom-text-2 {
+		font-weight: bold;
+	}
+	</style>
+<div style = "position:fixed; left:10px; top:10px" class = "youwatch-logo-div">
+	<input type = "image" img src = "youwatch.png" alt = "The YouWatch logo." class = "youwatch-logo-img" onclick="redirectToHome()">
+	</div>
 </div>
-
+<div style = "position:fixed; left:150px; top:900px" class = "notice-text-div">
+	<font class = "notice-text" face = "Inter" size = "3">YouWatch is not affiated with YouTube or Google. This was a non-profit project made by @thefireofalazer on github, twitter, and @thefireofalazer_coded on twitch. YouWatch also includes extra code by ChatGPT.</font>
+</div>
 </body>
-
+<body>
+		<div style = "position:fixed; left:300px; top:300px" class = "thumbnail-1-div">
+			<input alt = "Cannot find element. Please try again later." type = "image" img src = "http://localhost:8000/video.png" class = "thumbnail-1" width = "333" height = "201" onclick="redirectToPlayer()">
+		</div>
+		<script>
+			function redirectToPlayer() {
+				location.href = "player-index.html";
+			}
+		</script>
+		<div style = "position:fixed; left:650px; top:350px" class = "thumbnail-1-top-text-div">
+			<font class = "thumbnail-1-top-text" face = "Verdana" size = "5">how 2 skateboard (in skate 3)</font>
+		</div>
+		<div style = "position:fixed; left:650px; top:400px" class = "thumbnail-1-bottom-text-1-div">
+			<font class = "thumbnail-1-bottom-text-1" face = "Verdana" size = "5">From:</font>
+		</div>
+		<div style = "position:fixed; left:730px; top:400px" class = "thumbnail-1-bottom-text-2-div">
+			<font class = "thumbnail-1-bottom-text-2" face = "Verdana" size = "5">thefireofalazer</font>
+		</div>
+		<script>
+			function redirectToHome() {
+					location.href = "index.html";
+				}
+			</script>
+</body>
 </html>
