@@ -19,13 +19,13 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .logo img {
-    margin-top: 20px;
-    width: 70px; /* Adjust the size as needed */
+    margin-top: 0px;
+    width: 90px; /* Adjust the size as needed */
     height: auto;
 }
 
 .search-bar {
-    margin-top: 26px;
+    margin-top: 27px;
     flex: 0.9;
     display: flex;
     align-items: center;
@@ -82,32 +82,30 @@ nav ul {
     display: flex;
 }
 
-up {
-    margin-top: 35px;
-    width: 10px;
-    margin-right: 80px;
-    margin-left: 10px;
+up img  {
+    margin-top: 30px;
+    width: 150px;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 50px;
 
 }
 
 nav li {
     margin-top: 30px;
     margin-right: 10px;
+
 }
 
-nav a {
+nav cot {
     text-decoration: none;
     display: inline-block;
     padding: 8px 15px;
-    background-color: #e7e7e7; /* Background color for the rounded box */
+    background-color: #ffffff; /* Background color for the rounded box */
     background: url("button.png") repeat;
     
     color: #ffffff;
     transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ddd; /* Change the background color on hover */
 }
 
 
