@@ -19,17 +19,20 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .logo img {
+    position:absolute;
     margin-top: 0px;
     width: 90px; /* Adjust the size as needed */
+    left: 10px;
     height: auto;
 }
 
 .search-bar {
     margin-top: 27px;
-    flex: 0.9;
+    flex: 1;
     display: flex;
     align-items: center;
     margin: 30 30px;
+    margin-left: 100px;
     height: 40px;
     width: 20px;
 }
@@ -82,30 +85,45 @@ nav ul {
     display: flex;
 }
 
-up img  {
-    margin-top: 27.5px;
-    width: 150px;
+up a {
+    margin-top: 0px;
     height: auto;
     margin-right: 0px;
-    margin-left: 50px;
-
-}
-
-nav li {
-    margin-top: 30px;
-    margin-right: 10px;
-
-}
-
-nav cot {
+    margin-left: 0px;
     text-decoration: none;
     display: inline-block;
     padding: 8px 15px;
-    background-color: #ffffff; /* Background color for the rounded box */
-    background: url("button.png") repeat;
-    
-    color: #ffffff;
-    transition: background-color 0.3s ease;
+    background-image: url("upload button.png");
+    background-size: 160px;
+    color: #444;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+yp a {
+position:absolute;
+top: -25px;
+right: 20px;
+
+ 
+}
+nav li {
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+    left: 30px;
+}
+
+nav cot a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-image: url("button.png");
+    background-size: 160px;
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer;
+
 }
 
 
