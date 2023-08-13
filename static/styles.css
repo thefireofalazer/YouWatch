@@ -62,6 +62,11 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box; /* Include padding in total height and width */
 }
 
+dup {
+    position:absolute;
+    top: 300px;
+    right: 450px;
+}
 #search-button.search-icon {
     font-size: 1.125em; /* Use em units for relative font size */
 }
@@ -127,6 +132,17 @@ nav cot a {
 }
 
 
+.trending-video-grid {
+    position: absolute;
+    left: 500px;
+    top: 20px;
+    position: relative;
+   max-width: 300px;
+    height: auto;
+    padding: 20px;
+      
+}
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -134,9 +150,28 @@ nav cot a {
     padding: 20px;
 }
 
+.trending-video-card {
+    position:relative;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.trending-video-card img {
+   max-width: 300px;
+   height:auto;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.trending-video-card h3 {
+    margin: 10px 0;
+}
+
+
 .video-card {
     border: 1px solid #ccc;
-    padding: 10px;
     border-radius: 4px;
     text-align: center;
 }
