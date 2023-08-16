@@ -1,0 +1,39 @@
+{% extends 'youwatch/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+
+{% for i in trending_videos %}
+  <div class="d-flex flex-column align-items-center justify-content-center" style="margin: 9em;">
+    <div class="row">
+      <div class="col-md-auto">
+        <h1 class="display-6">{{ i }}</h1>
+        <div class="card" style="width: 30rem; margin: 1em;">
+          <img src="{% static 'thumb_placeholder.png' %}" alt="Video Thumbnail" />
+          <div class="card-body">
+            <h5 class="card-title">Video title</h5>
+            <p class="card-text">Video description goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+     <!-- This is temporary. We will soon be switiching to JavaScript and AWS APIs-->
+  <main>
+      <section class="featured">
+        <!-- Display featured content here -->
+      </section>
+
+      <section class="content">
+        <!-- Display streaming content here -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 YouWatch</p>
+      </div>
+    </footer>
+{% endblock %}

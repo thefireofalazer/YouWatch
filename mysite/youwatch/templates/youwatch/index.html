@@ -1,0 +1,40 @@
+{% extends 'youwatch/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+  <h1 class="display-6">Videos</h1>
+  <div class="container">
+    <div class="row" style="margin-top: 1em;">
+      {% for item in index_vids %}
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+            <img src="{% static 'thumb_placeholder.png' %}" class="card-img-top" alt="Video Thumbnail">
+            <div class="card-body">
+              <h5 class="card-title">Video Title</h5>
+              <p class="card-text">Video description goes here.</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- This is temporary. We will soon be switiching to JavaScript and AWS APIs-->
+</div>
+  <main>
+    <section class="featured">
+      <!-- Display featured content here -->
+    </section>
+
+    <section class="content">
+      <!-- Display streaming content here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 YouWatch</p>
+    </div>
+  </footer>
+{% endblock %}
