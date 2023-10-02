@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>Sample Player</head>
+<body>
+    {% for video in videos %}
+    <video width="530" height="440" controls autoplay>
+        <source src="{{ MEDIA_URL }}{{video}}" type="video/mp4"> </source>
+      </video>
+</body>
+</html>
