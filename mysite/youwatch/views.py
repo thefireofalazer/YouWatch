@@ -1,17 +1,9 @@
 from django.shortcuts import render
 import os
 
-from bucket_retrieve import retrieve
-
 index_vids = []
 for i in range(30): # This is the number of placeholder videos generated in the index.html page.
     index_vids.append(i)
-
-retrieve()
-videos = os.listdir("./media/")
-video_list = []
-for video in videos:
-    video_list.append(video)
 
 
 # Create your views here.
@@ -37,5 +29,5 @@ def categories(request):
 
 def player(request):
     return render(request, "youwatch/sample_player.html", {
-        "videos": video_list
+        "videos": ["video.mp4"]
     })
